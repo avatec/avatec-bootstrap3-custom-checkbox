@@ -40,5 +40,6 @@ Package uses font-awesome 4.7.x, and default bootstrap3 checkbox implementation.
             <script src="src/checkbox.js" type="text/javascript"></script>
         </body>
     </html>
+~~~~
 
 [If You like this project - please donate using PayPal](https://www.paypal.com/cgi-bin/webscr?cmd=_donations&business=RN84ZCNKWJNLG&item_name=Donate&currency_code=USD&source=url")
