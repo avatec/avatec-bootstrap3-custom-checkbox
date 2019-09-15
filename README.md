@@ -10,7 +10,7 @@ Package uses font-awesome 4.7.x, and default bootstrap3 checkbox implementation.
 
 
 
-    <!DOCTYPE html>
+~~~~<!DOCTYPE html>
     <html>
         <head>
             <meta charset="uf8-8">
@@ -39,7 +39,7 @@ Package uses font-awesome 4.7.x, and default bootstrap3 checkbox implementation.
             <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
             <script src="src/checkbox.js" type="text/javascript"></script>
         </body>
-    </html>
+    </html>~~~~
     
 [If You like this project - please donate using PayPal](https://www.paypal.com/cgi-bin/webscr?cmd=_donations&business=RN84ZCNKWJNLG&item_name=Donate&currency_code=USD&source=url")
 
