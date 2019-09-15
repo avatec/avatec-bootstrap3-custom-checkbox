@@ -41,5 +41,5 @@ Package uses font-awesome 4.7.x, and default bootstrap3 checkbox implementation.
         </body>
     </html>
     
-[If You like this project - please donate link](https://www.paypal.com/cgi-bin/webscr?cmd=_donations&business=RN84ZCNKWJNLG&item_name=Donate&currency_code=USD&source=url")
+[If You like this project - please donate using PayPal](https://www.paypal.com/cgi-bin/webscr?cmd=_donations&business=RN84ZCNKWJNLG&item_name=Donate&currency_code=USD&source=url")
 
