@@ -2,6 +2,8 @@
 PureJS Custom Checkbox that not require jQuery to work. Example usage bellow. 
 Package uses font-awesome 4.7.x, and default bootstrap3 checkbox implementation.
 
+* Includes SCSS for customize checkbox *
+
 
     <!DOCTYPE html>
     <html>
