@@ -1,0 +1,83 @@
+$checkbox-checked-background-color: black;
+$checkbox-checked-color: white;
+$checkbox-border-color: silver;
+
+.checkbox {
+    .label {
+        position: relative;
+        padding-left: 30px;
+
+        &:before {
+            position: absolute;
+            top: 4px;
+            left: 0px;
+            width: 20px;
+            height: 20px;
+            border: 1px solid $checkbox-border-color;
+            content: "";
+        }
+    }
+
+    input {
+        display: none;
+    }
+
+    &.checkbox-checked {
+        .label:before {
+            background: $checkbox-checked-background-color;
+            color: $checkbox-checked-color;
+            content: "\f00c";
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-family: FontAwesome;
+            font-size: 10px;
+            font-style: normal;
+            font-weight: normal;
+            text-decoration: inherit;
+        }
+    }
+
+}
+
+
+/**
+<div class="checkbox">
+    <label>
+        <input data-toggle="checkbox-x" data-three-state="false" type="checkbox" class="" id="improvements[1]" name="improvements[1]" value="true">
+        Plac zabaw dla dzieci 1
+    </label>
+</div>
+
+.checkbox label {
+  padding-left: 30px;
+}
+
+.checkbox label:before {
+  position: absolute;
+  top: 4px;
+  left: 0;
+  width: 20px;
+  height: 20px;
+  border: 1px solid silver;
+  content: "";
+}
+
+.checkbox input {
+  display: none;
+}
+
+.checkbox.checkbox-checked label:before {
+  background: black;
+  color: white;
+  content: "\f00c";
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: FontAwesome;
+  font-size: 10px;
+  font-style: normal;
+  font-weight: normal;
+  text-decoration: inherit;
+}
+**/
