@@ -24,8 +24,6 @@ if( checkbox.length > 0 ) {
     }
 }
 
-ReloadChecked();
-
 function markAsChecked( e )
 {
     if( e.target.checked == false ) {
@@ -48,4 +46,8 @@ function ReloadChecked()
             }
         }
     }
+}
+
+window.onload = function() {
+    ReloadChecked();
 }
