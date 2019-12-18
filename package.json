@@ -1,4 +1,8 @@
 {
   "name": "avatec-bootstrap3-custom-checkbox",
-  "version": "1.1.0"
+  "version": "1.1.0",
+  "repository": {
+      "type": "git",
+      "url": "https://github.com/avatec/avatec-bootstrap3-custom-checkbox.git"
+    },
 }
