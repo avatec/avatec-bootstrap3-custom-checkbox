@@ -1,4 +1,4 @@
-# Custom Checkbox for Bootstrap 3.x
+# Custom Checkbox/Radio styling
 Vanilla JS Custom Checkbox. Example usage bellow.
 Package uses font-awesome 4.7.x.
 
