@@ -20,11 +20,18 @@
 var checkbox = document.querySelectorAll('.checkbox label input[type=checkbox]');
 if( checkbox.length > 0 ) {
     for( var i=0; i<checkbox.length; i++ ) {
-        checkbox[i].addEventListener('click' , markAsChecked, true );
+        checkbox[i].addEventListener('click' , CheckboxMarkAsChecked, true );
     }
 }
 
-function markAsChecked( e )
+var radio = document.querySelectorAll('.radio label input[type=radio]');
+if( radio.length > 0 ) {
+    for( var i=0; i<checkbox.length; i++ ) {
+        radio[i].addEventListener('click' , RadioMarkAsChecked, true );
+    }
+}
+
+function CheckboxMarkAsChecked( e )
 {
     if( e.target.checked == false ) {
         e.target.parentNode.parentNode.classList.remove('checkbox-checked');
@@ -35,19 +42,52 @@ function markAsChecked( e )
     }
 }
 
-function ReloadChecked()
+function RadioMarkAsChecked( e )
+{
+    var name = e.target.getAttribute('name');
+    var radios = document.querySelectorAll('input[name="' + name + '"]');
+    radios.forEach( function( ev , i ) {
+        if( ev.parentNode.parentNode.classList.contains('radio-checked') ) {
+            ev.parentNode.parentNode.classList.remove('radio-checked');
+            ev.removeAttribute('checked');
+        }
+    });
+
+    e.target.parentNode.parentNode.classList.add('radio-checked');
+    this.setAttribute('checked' , 1);
+}
+
+function Reload()
 {
     var cb = document.querySelectorAll(".checkbox");
     if( cb.length > 0 ) {
         for( var i=0; i<cb.length; i++ ) {
-            var cbl = cb[i].childNodes[0];
-            if( cbl.childNodes[0].hasAttribute('checked') ) {
+            if( cb[i].childNodes > 0 ) {
+                var cbl = cb[i].childNodes[0];
+                var cbl_checked = cbl.childNodes[0].hasAttribute('checked');
+            }
+            if( cbl_checked ) {
                 cb[i].classList.add('checkbox-checked');
+            }
+
+        }
+    }
+
+    var rb = document.querySelectorAll(".radio");
+    if( rb.length > 0 ) {
+        for( var i=0; i<rb.length; i++ ) {
+            if( rb[i].childNodes > 0 ) {
+                var rbl = rb[i].childNodes[0];
+                var rbl_checked = rbl.childNodes[0].hasAttribute('checked');
+            }
+
+            if( rbl_checked ) {
+                rb[i].classList.add('radio-checked');
             }
         }
     }
 }
 
 window.onload = function() {
-    ReloadChecked();
+    Reload();
 }
